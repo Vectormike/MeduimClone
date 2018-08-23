@@ -1,4 +1,3 @@
-!doctype html
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -21,52 +20,80 @@
                     </svg>
                 </span>
                 <form class="form-inline">
-                    <a class="button button--small button--chromeless u-sm-show is-inSiteNavBar u-baseColor--buttonNormal button--withIcon button--withSvgIcon u-xs-top2 is-touched" href="https://medium.com/search" title="Search" aria-label="Search"><span class="button-defaultState"><span class="svgIcon svgIcon--search svgIcon--25px"><svg class="svgIcon-use" width="25" height="25" viewBox="0 0 25 25"><path d="M20.067 18.933l-4.157-4.157a6 6 0 1 0-.884.884l4.157 4.157a.624.624 0 1 0 .884-.884zM6.5 11c0-2.62 2.13-4.75 4.75-4.75S16 8.38 16 11s-2.13 4.75-4.75 4.75S6.5 13.62 6.5 11z"></path></svg></span></span></a>
-                    <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header text-center">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
+                                    <a class="button button--small button--chromeless" href="https://medium.com/search" title="Search" aria-label="Search"><span class="button-defaultState"><span class="svgIcon svgIcon--search svgIcon--25px"><svg class="svgIcon-use" width="25" height="25" viewBox="0 0 25 25"><path d="M20.067 18.933l-4.157-4.157a6 6 0 1 0-.884.884l4.157 4.157a.624.624 0 1 0 .884-.884zM6.5 11c0-2.62 2.13-4.75 4.75-4.75S16 8.38 16 11s-2.13 4.75-4.75 4.75S6.5 13.62 6.5 11z"></path></svg></span></span></a>
+                                    <div class="text-center">
+                                        <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalLoginForm">Sign in</a>
                                     </div>
-                                    <div>
-                                        <h1 class="modal-title w-100 font-weight-bold text-center">Welcome Back</h1>    
-                                        <h2 class="signInInformation text-center">Sign in to access your personalized homepage, follow authors and topics you love, and clap for stories that matter to you.</h2>
-                                            <section class="loginOption text-center">
-                                                <label>Username:</label>
-                                                <br>
-                                                <input type="text" name="username" id="username" class="form-control">
-                                                <label>Password:</label>
-                                                <input type="password" name="password" id="password" class="form-control">   
-                                                <br>
-                                                <button type="button" class="btn btn-primary" id="loginbutton" name="loginbutton"<a href="login.php">Sign in</a></button>                                     
-                                            </section> 
-                                        <div class="text-center">
-                                                <span class="ui-body">No account?</span> 
-                                            <button class="button button--primary button--chromeless u-accentColor--buttonNormal">Create one</button>.
-                                            <div class="ui-body u-maxWidth400 u-marginAuto u-marginTop15">To make Medium work, we log user data and share it with service providers. Click "Sign in" above to accept Medium’s 
-                                                <a class="ds-link ds-link--styleObvious" href="#" target="_blank">Terms of Service</a> &amp; 
-                                                <a class="ds-link" href="#" target="_blank">Privacy Policy</a>.
+                                    <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header text-center">
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div>
+                                                        <h1 class="modal-title w-100 font-weight-bold text-center">Welcome Back</h1>    
+                                                        <h2 class="signInInformation text-center">Sign in to access your personalized homepage, follow authors and topics you love, and clap for stories that matter to you.</h2>
+                                                            <section class="loginOption text-center">
+                                                                <label>Username:</label>
+                                                                <br>
+                                                                <input type="text" name="username" id="username" class="form-control">
+                                                                <label>Password:</label>
+                                                                <input type="password" name="password" id="password" class="form-control">   
+                                                                <br>
+                                                                <a href="login.php"><button type="button" class="btn btn-primary" id="loginbutton" name="loginbutton">Sign in</button></a>                                     
+                                                            </section> 
+                                                        <div class="text-center">
+                                                                <span class="ui-body">No account?</span> 
+                                                            <button class="button button--primary button--chromeless u-accentColor--buttonNormal">Create one</button>.
+                                                            <div class="ui-body u-maxWidth400 u-marginAuto u-marginTop15">To make Medium work, we log user data and share it with service providers. Click "Sign in" above to accept Medium’s 
+                                                                <a class="ds-link ds-link--styleObvious" href="#" target="_blank">Terms of Service</a> &amp; 
+                                                                <a class="ds-link" href="#" target="_blank">Privacy Policy</a>.
+                                                            </div>
+                                                        </div>                                        
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    <div class="text-center">
-                    <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalLoginForm">Sign in</a>
-                    </div>
-                    <div class="">
-                        <button class="btn btn-outline-success my-2 my-sm-0" data-target="#modalRegisterForm" data-toggle="modal" type="button">Get Started</button>
-                    </div>
-                        <div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    
-                                </div>
-                            </div>
-                        </div>
+                                        </div>
+                                        <div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header text-center">
+                <h4 class="modal-title w-100 font-weight-bold">Sign up</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body mx-3">
+                <div class="md-form mb-5">
+                    <i class="fa fa-user prefix grey-text"></i>
+                    <input type="text" id="orangeForm-name" class="form-control validate">
+                    <label data-error="wrong" data-success="right" for="orangeForm-name">Your name</label>
+                </div>
+                <div class="md-form mb-5">
+                    <i class="fa fa-envelope prefix grey-text"></i>
+                    <input type="email" id="orangeForm-email" class="form-control validate">
+                    <label data-error="wrong" data-success="right" for="orangeForm-email">Your email</label>
+                </div>
+
+                <div class="md-form mb-4">
+                    <i class="fa fa-lock prefix grey-text"></i>
+                    <input type="password" id="orangeForm-pass" class="form-control validate">
+                    <label data-error="wrong" data-success="right" for="orangeForm-pass">Your password</label>
+                </div>
+
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+                <button class="btn btn-deep-orange"><a href="login.php">Sign up</a></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="text-center">
+    <a href="" class="btn btn-success btn-rounded mb-4" data-toggle="modal" data-target="#modalRegisterForm">Get Started</a>
+</div>
                 </form>
             </nav>
         <nav class="nav d-flex justify-content-between navigation-scrollers">
@@ -356,29 +383,25 @@
         $("#loginbutton").click(function(){
             var username = $('#username').val()
             var password = $('#password').val()
-            if((username == ' ' || password != ' ') && (username != ' ' || password == ' ' )){
+            if((username == ' ' &&  password == ' ' )){
                 alert("Both fields are required");
                 }
-            else if(username = '' && password = ''){
+            else if(username == '' && password == ''){
                 alert("Username and Password is required");
-                }
+            }
             else {
                 $.ajax({
                     url:"action.php",
                     method:"POST",
                     data:{username:username, password:password},
                     success:function(data){
-                        if(data == 'No'){
-                            alert("Wrong details!");
-                        }
-                        else{
-                            ('#modalLoginForm').hide();
-                            location.reload();
-                        }
+                        var response = JSON.parse(data);
+                        alert(response.answer);                            
                     }
-                });
-            }    
-        });
-    )};
+                })
+            };
+        })    
+    });
+
 </script>
 </html>

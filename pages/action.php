@@ -1,21 +1,41 @@
-<? php
+<?php
+
 session_start();
+
 $connect = mysqli_connect("localhost", "root", "", "meduimClone");
+if (mysqli_connect_errno){
+    echo "Failed to connect to MySQL: " .mysqli_connect_error();;
+}
 
 if(isset($_POST["username"])){
-    $query = "
-        SELECT * FROM admin_login
-        WHERE admin_name = '".$_POST['username']"'
-        AND admin_password = '".$_POST['password']"'
-    ";
-    $result = mysqli_query($connect, $query)
-    if(mysqli_num_rows > 0){
-        $_SESSION["username"] = $_POST["username"];
-        echo 'Yes';
+
+    $name = $_POST['username'];
+    $password = $_POST['password'];
+
+    $sql = "SELECT * FROM admin_login WHERE admin_name = .$name. AND admin_password = $password";
+    
+    $result = mysqli_query($connect, $sql);
+    
+    if(result){
+        $value = $result->fetch_all();
+        if(count($value) > 0){
+           echo json_encode([
+               'status' => 200,
+               'answer' => 'Logged in successfully'
+           ]);
+           $_SESSION["username"] = $name;
+           return;
+       }
+       else{
+           echo json_encode([
+               'status' => 1,
+               'answer' => 'Unable to login'
+           ]);
+           return;
+        }
     }
-    else{
-        echo 'No'; 
-    }
+    echo "an error occured";
+    return;
 }
 
 ?>
